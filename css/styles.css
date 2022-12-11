@@ -279,6 +279,12 @@ img {
   flex-basis: calc((100% - 90px) / 4);
 }
 
+.benefit-picture {
+  background-color: var(--secondary-light);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
 .benefit-title {
   font-weight: 700;
   font-size: 14px;
