@@ -279,7 +279,7 @@ img {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.benefit-picture {
+.benefit-thumb {
   background-color: var(--secondary-light);
   padding: 25px 100px;
   margin-bottom: 30px;
