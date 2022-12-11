@@ -362,57 +362,44 @@ img {
   color: var(--secondary-dark);
 }
 
-.social-item {
-  width: 44px;
-  height: 44px;
-
-  color: var(--primary-icons-bg);
-}
-
-.social-item:hover {
-  background-color: var(--focus);
-  border-radius: 50%;
-  color: var(--primary-light);
-}
-
 .social-links {
   display: flex;
   gap: 10px;
-  justify-content: center;
+  padding: 0px 32px;
 }
 
-.social-links:hover {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+.social-link:hover {
+  border-radius: 50%;
+
+  background-color: var(--focus);
+  color: var(--primary-light);
 }
 
 .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
+
+  color: var(--primary-icons-bg);
 }
 
 /* Our Customers */
 .customers-list {
   display: flex;
-  /* justify-content: center; */
-  /* flex-basis: calc((100% - 150px) / 6); */
   gap: 30px;
 }
 
 .customer-link {
-  border-style: content;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 32px;
 
   border: 1px solid var(--primary-icons-bg);
-  color: var(--primary-icons-bg);
   border-radius: 4px;
+  color: var(--primary-icons-bg);
 }
 
 .customer-link:hover {
@@ -421,8 +408,6 @@ img {
 }
 
 .customer-icon {
-  width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 
