@@ -89,11 +89,6 @@ img {
   list-style-type: none;
 }
 
-.list .link:hover,
-.list .link:focus {
-  color: var(--focus);
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -197,7 +192,8 @@ img {
 
 .nav-pages .link,
 .nav-contacts .link {
-  display: block;
+  display: flex;
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -206,8 +202,11 @@ img {
 
   padding-top: 32px;
   padding-bottom: 32px;
+}
 
-  outline: 1px solid orange;
+.nav-pages .link:hover,
+.nav-contacts .link:hover {
+  color: var(--focus);
 }
 
 .nav-contacts .icon {
@@ -351,12 +350,47 @@ img {
 }
 
 .employee.description {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--secondary-dark);
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+
+  color: var(--secondary-dark);
+}
+
+.social-item:hover {
+  background-color: var(--focus);
+  border-radius: 50%;
+  color: var(--primary-light);
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-links:hover {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* Main Portfolio */
@@ -415,12 +449,6 @@ img {
   color: var(--secondary-dark);
 }
 
-/* Вот тут костыль перезаписывает ".list .link:hover" */
-.project .link:hover,
-.project .link:focus {
-  color: var(--primary-dark);
-}
-
 /* Footer */
 
 .footer {
@@ -446,6 +474,10 @@ img {
 
 .footer-address .item:last-child {
   margin-bottom: 0;
+}
+
+.footer-address .link:hover {
+  color: var(--focus);
 }
 
 .footer .email,
