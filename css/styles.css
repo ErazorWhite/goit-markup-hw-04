@@ -187,6 +187,10 @@ img {
   color: var(--secondary-dark);
 }
 
+.icon {
+  fill: currentColor;
+}
+
 .nav-pages .current {
   color: var(--focus);
 }
@@ -202,6 +206,12 @@ img {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  outline: 1px solid orange;
+}
+
+.nav-contacts .icon {
+  margin-right: 10px;
 }
 
 /* Main Studio */
@@ -224,6 +234,9 @@ img {
   padding-bottom: 200px;
 
   background-color: var(--hero-footer-background);
+  background-image: linear-gradient(0, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/studio/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .hero .container {
