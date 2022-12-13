@@ -463,15 +463,12 @@ img {
   gap: 30px;
 }
 
-.customer-item {
-  flex-basis: calc((100% - 150px) / 6);
-}
-
 .customer-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 92px;
+  padding: 16px 32px;
+
   border: 1px solid var(--primary-icons-bg);
   border-radius: 4px;
   color: var(--primary-icons-bg);
