@@ -10,22 +10,15 @@
 :root {
   --primary-light: #ffffff;
   --secondary-light: #f5f4fa;
-
   --footer-background: #2f303a;
-
-  --hero-bg: #c4c4c4;
-
+  --hero-bg: #C4C4C4;
   --focus: #2196f3;
   --hero-focus: #188ce8;
-
   --primary-dark: #212121;
   --secondary-dark: #757575;
   --tretiary-dark: rgba(255, 255, 255, 0.6);
-
   --primary-icons-bg: #afb1b8;
   --secondary--icons-bg: rgba(255, 255, 255, 0.1);
-
-  --project-overlay-bg: rgba(33, 150, 243, 0.9);
 }
 
 /* Utilities */
@@ -196,9 +189,12 @@ img {
   fill: currentColor;
 }
 
+.nav-pages .current {
+  color: var(--focus);
+}
+
 .nav-pages .link,
 .nav-contacts .link {
-  position: relative;
   display: flex;
   align-items: center;
 
@@ -210,39 +206,12 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-pages .link::before {
-  position: absolute;
-  content: "";
-
-  width: 100%;
-  height: 4px;
-  bottom: 0;
-  color: var(--focus);
-
-  border-radius: 2px;
-  background-color: var(--focus);
-
-  opacity: 0;
-}
 
 .nav-pages .link:hover,
 .nav-pages .link:focus,
 .nav-contacts .link:hover,
 .nav-contacts .link:focus {
   color: var(--focus);
-}
-
-.nav-pages .link:hover::before,
-.nav-pages .link:focus::before {
-  opacity: 1;
-}
-
-.nav-pages .current {
-  color: var(--focus);
-}
-
-.nav-pages .current::before {
-  opacity: 1;
 }
 
 .nav-contacts .icon {
@@ -351,37 +320,9 @@ img {
   padding-top: 0;
 }
 
-.product-list {
+.product .list {
   display: flex;
   gap: 30px;
-}
-
-.product-thumb {
-  position: relative;
-}
-
-.product-thumb::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.product-description {
-  position: absolute;
-  bottom: 27px;
-  left: 50%;
-  transform: translate(-50%, 0);
-
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--primary-light);
 }
 
 /* Out Team */
@@ -520,48 +461,6 @@ img {
 .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-thumb {
-  display: flex;
-  position: relative;
-
-  justify-content: center;
-  align-items: center;
-
-  overflow: auto;
-}
-
-.project-thumb::before {
-  display: inline-block;
-  position: absolute;
-
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: var(--project-overlay-bg);
-  opacity: 0;
-}
-
-.project-thumb:hover::before,
-.project-overlay:hover,
-.project-overlay:focus {
-    opacity: 1;
-}
-
-.project-overlay {
-  position: absolute;
-  padding: 63px 24px;
-
-  height: 100%;
-  width: 100%;
-
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-light);
-  opacity: 0; 
 }
 
 .project-box {
